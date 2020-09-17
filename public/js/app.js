@@ -70563,10 +70563,7 @@ function Final() {
     axios.post("/api/todos", {
       title: title,
       description: description
-    }).then(function (response) {
-      setTodos(response.data);
-      history.push("/");
-    })["catch"](function (error) {
+    }).then(history.push("/"))["catch"](function (error) {
       return console.log(error);
     });
   };

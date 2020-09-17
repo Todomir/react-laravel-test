@@ -11,10 +11,7 @@ function Final() {
         e.preventDefault();
         axios
             .post("/api/todos", { title, description })
-            .then(response => {
-                setTodos(response.data);
-                history.push("/");
-            })
+            .then(history.push("/"))
             .catch(error => console.log(error));
     };
 
