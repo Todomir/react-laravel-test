@@ -9,8 +9,7 @@ class TodoController extends Controller
 {
     public function index()
     {
-        $todos = Todo::where('is_completed', false)
-            ->orderBy('created_at', 'desc')
+        $todos = Todo::orderBy('created_at', 'desc')
             ->get();
 
         return $todos->toJson();
