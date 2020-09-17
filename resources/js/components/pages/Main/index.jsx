@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useHistory } from "react-router-dom";
 
 import "../../index.css";
@@ -6,20 +6,43 @@ import "../../index.css";
 function Main() {
     const history = useHistory();
 
+    const [todos, setTodos] = useState([]);
+
+    useEffect(() => {
+        axios
+            .get("/api/todos")
+            .then(response => {
+                setTodos(response.data);
+            })
+            .catch(error => console.log(error));
+    }, []);
+
     const handleClick = () => {
         history.push("/final");
     };
 
     return (
-        <div className="container">
-            <h1 className="container__title">Hello, world!</h1>
-            <p className="container__subtitle">
-                Programmed to work and not to feel.
-            </p>
+        <main className="container">
+            <h1 className="container__title">To-do App</h1>
+            <p className="container__subtitle">These are your to-dos:</p>
+            <section className="todo-container">
+                {todos && todos.length > 0 ? (
+                    todos.map(todo => (
+                        <div className="todo-item" key={todo.id}>
+                            <h3 className="todo-item__title">{todo.title}</h3>
+                            <p className="todo-item__description">
+                                {todo.description}
+                            </p>
+                        </div>
+                    ))
+                ) : (
+                    <p>Nobody home! Maybe create a new to-do.</p>
+                )}
+            </section>
             <button onClick={handleClick} className="container__button">
-                Not even sure that this is real :(
+                + New to-do
             </button>
-        </div>
+        </main>
     );
 }
 

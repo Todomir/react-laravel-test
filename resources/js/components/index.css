@@ -71,3 +71,54 @@ body,
 .container__button:active {
     transform: scale(0.95);
 }
+
+.todo-container {
+    width: 500px;
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.todo-item {
+    background-color: #1890ff;
+    padding: 10px;
+    color: #fff;
+    letter-spacing: -0.05em;
+}
+
+.todo-item + .todo-item {
+    margin-top: 10px;
+}
+
+.todo-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30px;
+    color: #fff;
+}
+
+.todo-form__input-block {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-block__label {
+    margin-top: 20px;
+    margin-bottom: 7px;
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: -0.05em;
+}
+
+.input-block__input {
+    width: 349px;
+    height: 49px;
+    padding: 10px;
+    border: 2px solid #ffffff;
+    background: #000;
+    color: #fff;
+    font-family: "Rubik", sans-serif;
+    font-size: 18px;
+}

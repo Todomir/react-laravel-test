@@ -6406,7 +6406,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;1,900&display=swap);", ""]);
 
 // module
-exports.push([module.i, "* {\n    margin: 0;\n    padding: 0;\n    box-sizing: border-box;\n}\n\nbody,\n#root {\n    width: 100vw;\n    height: 100vh;\n}\n\n.container {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    flex-direction: column;\n    height: 100%;\n    font-family: \"Rubik\", sans-serif;\n}\n\n.container--dark {\n    background: #000;\n}\n\n.container__title {\n    font-weight: 900;\n    font-style: italic;\n    font-size: 60px;\n    letter-spacing: -0.05em;\n}\n\n.container__title--dark {\n    color: #fff;\n}\n\n.container__subtitle {\n    font-size: 20px;\n    letter-spacing: -0.05em;\n}\n\n.container__subtitle--dark {\n    color: #fff;\n}\n\n.container__button {\n    transition: 0.4s;\n    width: 200px;\n    margin-top: 80px;\n    padding: 11px;\n    font-size: 18px;\n    font-family: \"Rubik\", sans-serif;\n    letter-spacing: -0.05em;\n    background: #000;\n    color: #fff;\n    border: none;\n    cursor: pointer;\n}\n\n.container__button--dark {\n    background: #fff;\n    color: #000;\n}\n\n.container__button:hover {\n    transform: scale(1.1);\n}\n\n.container__button:active {\n    transform: scale(0.95);\n}\n", ""]);
+exports.push([module.i, "* {\n    margin: 0;\n    padding: 0;\n    box-sizing: border-box;\n}\n\nbody,\n#root {\n    width: 100vw;\n    height: 100vh;\n}\n\n.container {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    flex-direction: column;\n    height: 100%;\n    font-family: \"Rubik\", sans-serif;\n}\n\n.container--dark {\n    background: #000;\n}\n\n.container__title {\n    font-weight: 900;\n    font-style: italic;\n    font-size: 60px;\n    letter-spacing: -0.05em;\n}\n\n.container__title--dark {\n    color: #fff;\n}\n\n.container__subtitle {\n    font-size: 20px;\n    letter-spacing: -0.05em;\n}\n\n.container__subtitle--dark {\n    color: #fff;\n}\n\n.container__button {\n    transition: 0.4s;\n    width: 200px;\n    margin-top: 80px;\n    padding: 11px;\n    font-size: 18px;\n    font-family: \"Rubik\", sans-serif;\n    letter-spacing: -0.05em;\n    background: #000;\n    color: #fff;\n    border: none;\n    cursor: pointer;\n}\n\n.container__button--dark {\n    background: #fff;\n    color: #000;\n}\n\n.container__button:hover {\n    transform: scale(1.1);\n}\n\n.container__button:active {\n    transform: scale(0.95);\n}\n\n.todo-container {\n    width: 500px;\n    margin-top: 30px;\n    padding: 20px;\n    background-color: #f0f0f0;\n}\n\n.todo-item {\n    background-color: #1890ff;\n    padding: 10px;\n    color: #fff;\n    letter-spacing: -0.05em;\n}\n\n.todo-item + .todo-item {\n    margin-top: 10px;\n}\n\n.todo-form {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    flex-direction: column;\n    margin-top: 30px;\n    color: #fff;\n}\n\n.todo-form__input-block {\n    display: flex;\n    flex-direction: column;\n}\n\n.input-block__label {\n    margin-top: 20px;\n    margin-bottom: 7px;\n    text-transform: uppercase;\n    font-size: 18px;\n    letter-spacing: -0.05em;\n}\n\n.input-block__input {\n    width: 349px;\n    height: 49px;\n    padding: 10px;\n    border: 2px solid #ffffff;\n    background: #000;\n    color: #fff;\n    font-family: \"Rubik\", sans-serif;\n    font-size: 18px;\n}\n", ""]);
 
 // exports
 
@@ -70530,26 +70530,86 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
 
 
 
 function Final() {
   var history = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useHistory"])();
 
-  var handleClick = function handleClick() {
-    history.push("/");
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(""),
+      _useState2 = _slicedToArray(_useState, 2),
+      title = _useState2[0],
+      setTitle = _useState2[1];
+
+  var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(""),
+      _useState4 = _slicedToArray(_useState3, 2),
+      description = _useState4[0],
+      setDescription = _useState4[1];
+
+  var handleClick = function handleClick(e) {
+    e.preventDefault();
+    axios.post("/api/todos", {
+      title: title,
+      description: description
+    }).then(function (response) {
+      setTodos(response.data);
+      history.push("/");
+    })["catch"](function (error) {
+      return console.log(error);
+    });
   };
 
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "container container--dark"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
     className: "container__title container__title--dark"
-  }, "Hello, world."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-    className: "container__subtitle container__subtitle--dark"
-  }, ":D"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
-    onClick: handleClick,
+  }, "Create a new to-do"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
+    onSubmit: handleClick,
+    className: "todo-form"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "todo-form__input-block"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
+    className: "input-block__label",
+    htmlFor: "title"
+  }, "Title *"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+    className: "input-block__input",
+    type: "text",
+    name: "title",
+    id: "title",
+    value: title,
+    onChange: function onChange(event) {
+      setTitle(event.target.value);
+    }
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "todo-form__input-block"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
+    className: "input-block__label",
+    htmlFor: "description"
+  }, "Description *"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("textarea", {
+    className: "input-block__input",
+    rows: "5",
+    cols: "33",
+    name: "description",
+    id: "description",
+    value: description,
+    onChange: function onChange(event) {
+      setDescription(event.target.value);
+    }
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
     className: "container__button container__button--dark"
-  }, "Go back"));
+  }, "Create new to-do")));
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (Final);
@@ -70570,6 +70630,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
 /* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../index.css */ "./resources/js/components/index.css");
 /* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_index_css__WEBPACK_IMPORTED_MODULE_2__);
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
 
 
 
@@ -70577,20 +70649,44 @@ __webpack_require__.r(__webpack_exports__);
 function Main() {
   var history = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useHistory"])();
 
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]),
+      _useState2 = _slicedToArray(_useState, 2),
+      todos = _useState2[0],
+      setTodos = _useState2[1];
+
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
+    axios.get("/api/todos").then(function (response) {
+      setTodos(response.data);
+    })["catch"](function (error) {
+      return console.log(error);
+    });
+  }, []);
+
   var handleClick = function handleClick() {
     history.push("/final");
   };
 
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("main", {
     className: "container"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
     className: "container__title"
-  }, "Hello, world!"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+  }, "To-do App"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     className: "container__subtitle"
-  }, "Programmed to work and not to feel."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+  }, "These are your to-dos:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
+    className: "todo-container"
+  }, todos && todos.length > 0 ? todos.map(function (todo) {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "todo-item",
+      key: todo.id
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
+      className: "todo-item__title"
+    }, todo.title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+      className: "todo-item__description"
+    }, todo.description));
+  }) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Nobody home! Maybe create a new to-do.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
     onClick: handleClick,
     className: "container__button"
-  }, "Not even sure that this is real :("));
+  }, "+ New to-do"));
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (Main);
