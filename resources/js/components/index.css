@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;1,900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+#root {
+    width: 100vw;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    font-family: "Rubik", sans-serif;
+}
+
+.container--dark {
+    background: #000;
+}
+
+.container__title {
+    font-weight: 900;
+    font-style: italic;
+    font-size: 60px;
+    letter-spacing: -0.05em;
+}
+
+.container__title--dark {
+    color: #fff;
+}
+
+.container__subtitle {
+    font-size: 20px;
+    letter-spacing: -0.05em;
+}
+
+.container__subtitle--dark {
+    color: #fff;
+}
+
+.container__button {
+    transition: 0.4s;
+    width: 200px;
+    margin-top: 80px;
+    padding: 11px;
+    font-size: 18px;
+    font-family: "Rubik", sans-serif;
+    letter-spacing: -0.05em;
+    background: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.container__button--dark {
+    background: #fff;
+    color: #000;
+}
+
+.container__button:hover {
+    transform: scale(1.1);
+}
+
+.container__button:active {
+    transform: scale(0.95);
+}
